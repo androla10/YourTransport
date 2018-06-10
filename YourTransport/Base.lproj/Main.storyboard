@@ -1,24 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="61C-cw-ehB">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--VENTA-->
+        <scene sceneID="NX4-V8-gLW">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="dRx-Rz-A70" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JAc-GS-1VC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SZ9-aj-mCb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="VENTA" id="dJk-MA-ejx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AjZ-Cr-J0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599.20000000000005" y="-435.22167487684732"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="5Ln-AP-ZzY">
+            <objects>
+                <tableViewController id="qqn-bs-S4L" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Root View Controller" id="fhN-oO-4sd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L8g-76-BID" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="374.6305418719212"/>
+        </scene>
+        <!--ENVIOS-->
+        <scene sceneID="1gK-ei-uVv">
+            <objects>
+                <navigationController id="rcn-IY-WSW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ENVIOS" id="gpS-Bd-piW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xpF-CC-Ba8">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qqn-bs-S4L" kind="relationship" relationship="rootViewController" id="24f-cZ-Kw2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3F-ge-BOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599.20000000000005" y="320.68965517241378"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="eTw-i1-tt5">
+            <objects>
+                <viewController id="ZfR-jn-Sgy" customClass="LoginViewController" customModule="YourTransport" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jAx-Tm-zHA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YOUR TRANSPORT" translatesAutoresizingMaskIntoConstraints="NO" id="88O-0T-o47">
+                                <rect key="frame" x="59" y="109" width="276" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.35600262880325317" blue="0.35600262880325317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jl2-AS-47I">
+                                <rect key="frame" x="16" y="368" width="343" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Nombre de usuario" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UsW-FT-GtL">
+                                        <rect key="frame" x="57" y="46" width="278" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gjx-le-2Z3">
+                                        <rect key="frame" x="57" y="96" width="278" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ico-key" translatesAutoresizingMaskIntoConstraints="NO" id="Cyr-0P-5mz">
+                                        <rect key="frame" x="18" y="100" width="22" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ico-user" translatesAutoresizingMaskIntoConstraints="NO" id="uTq-4z-UX1">
+                                        <rect key="frame" x="18" y="50" width="22" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HS-ni-aZx">
+                                        <rect key="frame" x="62" y="229" width="219" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                        <state key="normal" title="No puedes acceder a tu cuenta">
+                                            <color key="titleColor" red="0.50980392159999999" green="0.63529411759999999" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ewb-u3-Smf" kind="show" id="d86-k9-s9R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoF-Gu-fH0">
+                                        <rect key="frame" x="18" y="167" width="306" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <state key="normal" title="Ingresar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickIngresar:" destination="ZfR-jn-Sgy" eventType="touchUpInside" id="cm7-5a-6Vn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maC-P1-V75">
+                                        <rect key="frame" x="50" y="351" width="243" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                        <state key="normal" title="Eres nuevo, create una cuenta aqui">
+                                            <color key="titleColor" red="0.50980392159999999" green="0.63529411759999999" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="4RC-zB-RDn" kind="show" id="2V6-AH-RAw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YKU-jQ-36q"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ikK-DJ-Eqm"/>
+                    <connections>
+                        <outlet property="txtClave" destination="Gjx-le-2Z3" id="yQz-7o-dx0"/>
+                        <outlet property="txtUsuario" destination="UsW-FT-GtL" id="wiX-vF-vHd"/>
+                        <segue destination="F5U-RK-9O8" kind="showDetail" identifier="segueTabMain" id="HTl-6Q-y1t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8qL-em-U71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1906.4000000000001" y="-84.236453201970448"/>
+        </scene>
+        <!--Account Registration View Controller-->
+        <scene sceneID="tqp-6x-zMt">
+            <objects>
+                <viewController id="4RC-zB-RDn" customClass="AccountRegistrationViewController" customModule="YourTransport" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bbD-vh-FuP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="H7D-zp-XMh"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKs-Zl-NHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1074" y="-854"/>
+        </scene>
+        <!--Account Recovery View Controller-->
+        <scene sceneID="4Ma-UF-5e1">
+            <objects>
+                <viewController id="ewb-u3-Smf" customClass="AccountRecoveryViewController" customModule="YourTransport" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3wx-r7-qDC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9qQ-c3-Hvo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yG-Oj-mXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1906" y="-854"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yL0-Db-Krz">
+            <objects>
+                <tabBarController id="F5U-RK-9O8" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="URh-DQ-bog">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dRx-Rz-A70" kind="relationship" relationship="viewControllers" id="OBc-R5-t16"/>
+                        <segue destination="rcn-IY-WSW" kind="relationship" relationship="viewControllers" id="u2R-TU-ryL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8K-2v-LWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-735" y="-50"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dVo-NP-hIY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="61C-cw-ehB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="muQ-xX-p3O">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZfR-jn-Sgy" kind="relationship" relationship="rootViewController" id="4tI-6N-34F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HWZ-br-xgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2847.1999999999998" y="-83.497536945812811"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="YOUR TRANSPORT" width="500" height="500"/>
+        <image name="ico-key" width="512" height="512"/>
+        <image name="ico-user" width="512" height="512"/>
+    </resources>
 </document>

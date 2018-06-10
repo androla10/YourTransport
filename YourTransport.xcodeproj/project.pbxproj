@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5590DF720CCEDD40042EEAA /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5590DF520CCEC660042EEAA /* Raleway-Italic.ttf */; };
+		C5590DF820CCEDD40042EEAA /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5590DF620CCEC670042EEAA /* Raleway-Regular.ttf */; };
+		C5590DF920CCEDD40042EEAA /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5590DF320CCEC0D0042EEAA /* OpenSans-Bold.ttf */; };
+		C5590DFA20CCEDD40042EEAA /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5590DF420CCEC0E0042EEAA /* OpenSans-BoldItalic.ttf */; };
+		C5642C4520CC6209003954B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5642C4420CC6209003954B1 /* LoginViewController.swift */; };
+		C5642C4720CC6FDF003954B1 /* AccountRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5642C4620CC6FDF003954B1 /* AccountRecoveryViewController.swift */; };
+		C5642C4920CC703E003954B1 /* AccountRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5642C4820CC703E003954B1 /* AccountRegistrationViewController.swift */; };
 		C5F7C43120B28F4B00E63DA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7C43020B28F4B00E63DA6 /* AppDelegate.swift */; };
 		C5F7C43320B28F4B00E63DA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7C43220B28F4B00E63DA6 /* ViewController.swift */; };
 		C5F7C43620B28F4B00E63DA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F7C43420B28F4B00E63DA6 /* Main.storyboard */; };
@@ -35,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5590DF320CCEC0D0042EEAA /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "../../../../../Downloads/fonts-2/Open_Sans/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		C5590DF420CCEC0E0042EEAA /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-BoldItalic.ttf"; path = "../../../../../Downloads/fonts-2/Open_Sans/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C5590DF520CCEC660042EEAA /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Italic.ttf"; path = "../../../../../Downloads/fonts-2/Raleway/Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		C5590DF620CCEC670042EEAA /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Regular.ttf"; path = "../../../../../Downloads/fonts-2/Raleway/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		C5642C4420CC6209003954B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C5642C4620CC6FDF003954B1 /* AccountRecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRecoveryViewController.swift; sourceTree = "<group>"; };
+		C5642C4820CC703E003954B1 /* AccountRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegistrationViewController.swift; sourceTree = "<group>"; };
 		C5F7C42D20B28F4B00E63DA6 /* YourTransport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourTransport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F7C43020B28F4B00E63DA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5F7C43220B28F4B00E63DA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +90,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5590DF220CCEBB80042EEAA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C5590DF520CCEC660042EEAA /* Raleway-Italic.ttf */,
+				C5590DF620CCEC670042EEAA /* Raleway-Regular.ttf */,
+				C5590DF320CCEC0D0042EEAA /* OpenSans-Bold.ttf */,
+				C5590DF420CCEC0E0042EEAA /* OpenSans-BoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C5642C4120CC61A9003954B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5642C4420CC6209003954B1 /* LoginViewController.swift */,
+				C5642C4620CC6FDF003954B1 /* AccountRecoveryViewController.swift */,
+				C5642C4820CC703E003954B1 /* AccountRegistrationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C5F7C42420B28F4B00E63DA6 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +134,8 @@
 		C5F7C42F20B28F4B00E63DA6 /* YourTransport */ = {
 			isa = PBXGroup;
 			children = (
+				C5590DF220CCEBB80042EEAA /* Fonts */,
+				C5642C4120CC61A9003954B1 /* Controller */,
 				C5F7C43020B28F4B00E63DA6 /* AppDelegate.swift */,
 				C5F7C43220B28F4B00E63DA6 /* ViewController.swift */,
 				C5F7C43420B28F4B00E63DA6 /* Main.storyboard */,
@@ -232,6 +269,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5590DF720CCEDD40042EEAA /* Raleway-Italic.ttf in Resources */,
+				C5590DF820CCEDD40042EEAA /* Raleway-Regular.ttf in Resources */,
+				C5590DF920CCEDD40042EEAA /* OpenSans-Bold.ttf in Resources */,
+				C5590DFA20CCEDD40042EEAA /* OpenSans-BoldItalic.ttf in Resources */,
 				C5F7C43E20B28F4F00E63DA6 /* LaunchScreen.storyboard in Resources */,
 				C5F7C43B20B28F4F00E63DA6 /* Assets.xcassets in Resources */,
 				C5F7C43620B28F4B00E63DA6 /* Main.storyboard in Resources */,
@@ -260,6 +301,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5F7C43320B28F4B00E63DA6 /* ViewController.swift in Sources */,
+				C5642C4920CC703E003954B1 /* AccountRegistrationViewController.swift in Sources */,
+				C5642C4520CC6209003954B1 /* LoginViewController.swift in Sources */,
+				C5642C4720CC6FDF003954B1 /* AccountRecoveryViewController.swift in Sources */,
 				C5F7C43120B28F4B00E63DA6 /* AppDelegate.swift in Sources */,
 				C5F7C43920B28F4B00E63DA6 /* YourTransport.xcdatamodeld in Sources */,
 			);
